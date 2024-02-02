@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <title>Bootcamp</title>
+  </head>
+  <body>
+    <div class="container pb-5">
+      <header class="mb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Courses
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Front-end developer</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Back-end developer</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">SQL</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h1 class="text-center text-primary mb-2">
+            Effective Solutions for You
+          </h1>
+        </section>
+
+        <section>
+          <h2 class="text-success text-center mb-4">Advanteges</h2>
+          <ul class="list-unstyled d-flex p-2 justify-content-between">
+            <li>
+              <h5 class="text-primary text-center">Fast</h5>
+              <span class="text-center">
+                Within 12 weeks, we will be able to develop a Full Stack App.
+              </span>
+            </li>
+            <li>
+              <h5 class="text-primary text-center">Qualitatively</h5>
+              <span class="text-center">
+                81% of our Students found interneship or paid job.
+              </span>
+            </li>
+            <li>
+              <h5 class="text-primary text-center">For free</h5>
+              <span class="text-center">
+                0 euro is the cost of our program.
+              </span>
+            </li>
+            <li>
+              <h5 class="text-primary text-center">Technologies</h5>
+              <span class="text-center">
+                50+ topics are given about Front-end, Back-end, and Databases.
+              </span>
+            </li>
+          </ul>
+         
+        </section>
+
+         <section>
+          <h2 class="text-success text-center mb-2">Our students</h2>
+            <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="text"
+                  placeholder="Check"
+                  aria-label="Search"
+                  id="search-student"
+                />
+                <button class="btn btn-outline-success" type="button" id="search-btn">
+                  Check
+                </button>
+              </form>
+              <div id="message"></div>
+          <table class="table table-bordered" id="table">
+            <thead>
+              <tr>
+                <th class="table-primary text-center" scope="col">Name</th>
+                <th scope="col" class="text-center">Rating (max 10)</th>
+               </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+                <td class="table-primary">Olha V</td>
+                <td>7.2</td>
+                
+              </tr>
+              <tr>
+                <td class="table-primary">Anna R</td>
+                <td>5.5</td>
+              
+              </tr>
+              <tr>
+                <td class="table-primary">Dmitrii F</td>
+                <td>9.3</td>
+               
+              </tr>
+              <tr>
+                <td class="table-primary">Oleg V</td>
+                <td>3.4</td>
+               
+              </tr>
+               <tr>
+                <td class="table-primary">Andrei R</td>
+                <td>5.2</td>
+               
+              </tr>
+             
+            </tbody>
+          </table>
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Add name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="input-chanhes-name"
+                placeholder="input changes"
+              />
+              <label for="exampleFormControlInput1" class="form-label"
+                >Add rating</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="input-chanhes-rating"
+                placeholder="input changes"
+              />
+             
+            <button type="button" class="btn btn-success" id="submit-changes">
+              Add
+            </button>
+            <h3 id="error"></h3>
+          </form>
+        </section>
+        <section class="mb-5">
+          <h2 class="text-success text-center mb-2 p-5">Our Team</h2>
+          <ul class="list-unstyled d-flex p-2 justify-content-center gap-5">
+            <li class="text-center">
+              <img
+                src="images/Mark Wilson.jpg"
+                alt="Frontend Developer"
+                width="150"
+                height="200"
+              />
+              <h3>Mark Wilson</h3>
+              <span>Web Developer</span>
+            </li>
+            <li class="text-center">
+              <img
+                src="images/Tom Jard.jpg"
+                alt="Frontend Developer"
+                width="150"
+                height="200"
+              />
+              <h3>Tom Jard</h3>
+              <span>Frontend Developer</span>
+            </li>
+            <li class="text-center">
+              <img
+                src="images/Andru Kim.jpg"
+                alt="Backend developer"
+                width="150"
+                height="200"
+              />
+              <h3>Andru Kim</h3>
+              <span>Backend developer</span>
+            </li>
+            <li class="text-center">
+              <img
+                src="images/Daniela Mekson.png"
+                alt="HR"
+                width="150"
+                height="200"
+              />
+              <h3>Dana Meks</h3>
+              <span>HR</span>
+            </li>
+          </ul>
+        </section>
+
+       
+      </main>
+      <footer>
+<form>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<button type="button" class="btn btn-success">Submit</button>
+
+</form>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
